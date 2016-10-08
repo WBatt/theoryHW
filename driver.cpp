@@ -8,7 +8,7 @@ int main() {
     int row = 0;
     int col = 0;
     int ascii = 0;
-    string str = "";
+    string str = " ";
  
     cout<< "Enter a password." <<endl;
     cin >> str;
