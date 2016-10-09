@@ -8,9 +8,9 @@ int main() {
     int row = 0;
     int col = 0;
     int ascii = 0;
-    string str = " ";
+    string str = "";
  
-    cout<< "Enter a password." <<endl;
+    cout<< "Enter a password please." <<endl;
     cin >> str;
     
     for(int i = 0; i<str.length(); i++){
@@ -148,7 +148,7 @@ int main() {
     }
     
     if(col == 17 && (row >= 7 && row <=9)){
-        cout << "Valid password.  congrats." << endl;
+        cout << "Valid password." << endl;
     }else{
         cout << "Invalid password." << endl;
     }
