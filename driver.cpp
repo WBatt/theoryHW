@@ -143,10 +143,18 @@ int main() {
         if(col == 17 && (ascii >=  33 && ascii < 97) || (ascii > 122 && ascii <= 126))    //Special
             col+= 0;
         
-        cout << "In state: " << col << row << endl;
+        if(row <= 9){
+            cout << "In state: " << col << row << endl;
+        }else{
+            cout << "In state: 180" << endl;
+        }
+            
         
     }
-    
+    if(row > 9){
+        col = 18;
+        row = 0;
+    }
     if(col == 17 && (row >= 7 && row <=9)){
         cout << "Valid password." << endl;
     }else{
